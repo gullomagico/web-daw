@@ -10,8 +10,6 @@ import Login from "./routes/login-page";
 import ProfilePage from "./routes/profile-page";
 import ErrorPage from "./routes/error-page";
 
-import "./index.css";
-
 const router = createBrowserRouter([
     {
         path: "/",

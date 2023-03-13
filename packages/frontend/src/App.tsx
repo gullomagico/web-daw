@@ -7,8 +7,10 @@ function App() {
     return (
         <div className="App">
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static" sx={{ height: 40 }}>
-                    <Toolbar>
+                <AppBar position="static">
+                    <Toolbar
+                        variant="dense"
+                    >
                         <IconButton
                             size="large"
                             edge="start"
@@ -18,10 +20,15 @@ function App() {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1, maxHeight: 40 }}>
+                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             News
                         </Typography>
                         <Button color="inherit">Login</Button>
+                    </Toolbar>
+                    <Toolbar
+                        variant="dense"
+                    >
+
                     </Toolbar>
                 </AppBar>
             </Box>

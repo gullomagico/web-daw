@@ -1,38 +1,11 @@
-import { AppBar, Toolbar, Typography, Button, IconButton, Box } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-// import classes from "./App.module.scss";
+import Header from "./components/Header/Header";
 
 function App() {
 
     return (
-        <div className="App">
-            <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="static">
-                    <Toolbar
-                        variant="dense"
-                    >
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2, maxHeight: 40 }}
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            News
-                        </Typography>
-                        <Button color="inherit">Login</Button>
-                    </Toolbar>
-                    <Toolbar
-                        variant="dense"
-                    >
-
-                    </Toolbar>
-                </AppBar>
-            </Box>
-        </div>
+        <>
+            <Header></Header>
+        </>
     );
 }
 
